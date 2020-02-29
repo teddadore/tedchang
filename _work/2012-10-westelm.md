@@ -29,7 +29,7 @@ homepage_work_thumb: homepage_work_westelm@2x.png
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/westelm_01@2x.png" alt="">
+		<img class="" src="{{ site.url }}/images/work/westelm_01@2x.png" alt="">
 		<figcaption>My design work ranged from UI solutions for room concept shopping and dynamic searches, to high fidelity promotional assets.</figcaption>
 	</figure>
 </div>
@@ -42,17 +42,17 @@ homepage_work_thumb: homepage_work_westelm@2x.png
 
 <div class="small-12 medium-6 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/westelm_02@2x.jpg" alt="">
+		<img class="" src="{{ site.url }}/images/work/westelm_02@2x.jpg" alt="">
 	</figure>
 </div>
 
 <div class="small-12 medium-6 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/westelm_03@2x.jpg" alt="">
+		<img class="" src="{{ site.url }}/images/work/westelm_03@2x.jpg" alt="">
 	</figure>
 
 	<figure>
-		<img class="" src="{{ url }}/images/work/westelm_04@2x.jpg" alt="">
+		<img class="" src="{{ site.url }}/images/work/westelm_04@2x.jpg" alt="">
 	</figure>
 </div>
 

@@ -40,7 +40,7 @@ full_casestudy: true
 
 		<div class="small-4 medium-3 cell">
 			
-			<img class="" src="{{ url }}/images/work/google_nearby_01@2x.png" alt="">
+			<img class="" src="{{ site.url }}/images/work/google_nearby_01@2x.png" alt="">
 			
 		</div>
 	</div>
@@ -79,7 +79,7 @@ full_casestudy: true
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/google_nearby_02@2x.png" alt="">
+		<img class="" src="{{ site.url }}/images/work/google_nearby_02@2x.png" alt="">
 		<figcaption>Current "list view" and "carousel" designs to be revised.</figcaption>
 	</figure>
 	<br>
@@ -234,14 +234,14 @@ full_casestudy: true
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/google_nearby_03@2x.png" alt="">
+		<img class="" src="{{ site.url }}/images/work/google_nearby_03@2x.png" alt="">
 		<figcaption>Proposed design with relevant search filters added.</figcaption>
 	</figure>
 </div>
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/google_nearby_04@2x.png" alt="">
+		<img class="" src="{{ site.url }}/images/work/google_nearby_04@2x.png" alt="">
 		<figcaption>Complete spec for the proposed design.</figcaption>
 	</figure>
 </div>
@@ -256,7 +256,7 @@ full_casestudy: true
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/google_nearby_05@2x.png" alt="">
+		<img class="" src="{{ site.url }}/images/work/google_nearby_05@2x.png" alt="">
 		<figcaption>Adding results with justifications helped strengthen our design goal.</figcaption>
 	</figure>
 </div>
@@ -264,7 +264,7 @@ full_casestudy: true
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/google_nearby_06@2x.png" alt="">
+		<img class="" src="{{ site.url }}/images/work/google_nearby_06@2x.png" alt="">
 		<figcaption>Interaction flow when the user taps the date filter.</figcaption>
 	</figure>
 </div>
@@ -272,7 +272,7 @@ full_casestudy: true
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="{{ url }}/images/work/google_nearby_07@2x.png" alt="">
+		<img class="" src="{{ site.url }}/images/work/google_nearby_07@2x.png" alt="">
 		<figcaption>Interaction flow when the user taps the occupancy filter.</figcaption>
 	</figure>
 </div>
