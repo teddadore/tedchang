@@ -53,7 +53,7 @@ permalink: /thunderclap/
 
 		<div class="small-6 medium-6 cell">
 			
-			<img class="" src="/images/work/thunderclap_landing_01.png" alt="">
+			<img class="" src="{{ url }}/images/work/thunderclap_landing_01.png" alt="">
 			
 		</div>
 	</div>
@@ -99,7 +99,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_style_guide@2x.png" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_style_guide@2x.png" alt="">
 		<!-- <figcaption></figcaption> -->
 	</figure>
 </div>
@@ -133,7 +133,7 @@ permalink: /thunderclap/
 
 		<div class="small-7 medium-7 cell">
 			
-			<img class="" src="/images/work/thunderclap_research_01.png" alt="">
+			<img class="" src="{{ url }}/images/work/thunderclap_research_01.png" alt="">
 			
 		</div>
 	</div>
@@ -177,7 +177,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_surveys@2x.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_surveys@2x.jpg" alt="">
 		<!-- <figcaption></figcaption> -->
 	</figure>
 </div>
@@ -219,7 +219,7 @@ permalink: /thunderclap/
 
 		<div class="small-5 medium-5 cell">
 			
-			<img class="" src="/images/work/thunderclap_crescendo_project.png" alt="">
+			<img class="" src="{{ url }}/images/work/thunderclap_crescendo_project.png" alt="">
 			
 		</div>
 	</div>
@@ -256,14 +256,14 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-8 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_sketches@2x.png" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_sketches@2x.png" alt="">
 		<figcaption>Early sketches detailing the flow of push notification content.</figcaption>
 	</figure>
 </div>
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_wireframe.gif" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_wireframe.gif" alt="">
 		<figcaption>Flow of the user journey of account creation and app download</figcaption>
 	</figure>
 </div>
@@ -278,7 +278,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_01.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_01.jpg" alt="">
 		<figcaption>My design process: sketches, prototypes, and usability</figcaption>
 	</figure>
 </div>
@@ -286,14 +286,14 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_02.png" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_02.png" alt="">
 		<figcaption>An early flow documenting the Crescendo push-notification 'share' card</figcaption>
 	</figure>
 </div>
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_03.png" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_03.png" alt="">
 		<figcaption>A revision of our card template that's based on user feedback from our initial design</figcaption>
 	</figure>
 </div>
@@ -312,8 +312,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_04.jpg" alt="">
-		<figcaption>Lorem</figcaption>
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_04.jpg" alt="">
 	</figure>
 </div>
 
@@ -331,7 +330,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_05.png" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_05.png" alt="">
 		<figcaption>Our initial onboarding process with our default Crescendo visual style</figcaption>
 	</figure>
 </div>
@@ -345,7 +344,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_06.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_06.jpg" alt="">
 		<figcaption>Comparison between my new default and branded designs for onboarding users to the app</figcaption>
 	</figure>
 </div>
@@ -358,7 +357,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_07.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_07.jpg" alt="">
 		<figcaption>The evolution of my design solutions for Crescendo account creation</figcaption>
 	</figure>
 </div>
@@ -373,7 +372,7 @@ permalink: /thunderclap/
 
 <div class="small-12 medium-11 cell">
 	<figure>
-		<img class="" src="/images/work/thunderclap_crescendo_08.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/thunderclap_crescendo_08.jpg" alt="">
 		<figcaption>Each push notification touchpoint for Tribeca Film's ticket giveaway</figcaption>
 	</figure>
 </div>

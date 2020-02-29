@@ -34,7 +34,7 @@ homepage_work_thumb: homepage_work_cloudred@2x.png
 
 <div class="small-12 medium-8 cell">
 	<figure>
-		<img class="" src="/images/work/cloudred_mjh_01.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/cloudred_mjh_01.jpg" alt="">
 	</figure>
 </div>
 
@@ -52,7 +52,7 @@ homepage_work_thumb: homepage_work_cloudred@2x.png
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="/images/work/cloudred_mjh_02.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/cloudred_mjh_02.jpg" alt="">
 	</figure>
 </div>
 
@@ -64,7 +64,7 @@ homepage_work_thumb: homepage_work_cloudred@2x.png
 
 <div class="small-12 medium-10 cell">
 	<figure>
-		<img class="" src="/images/work/cloudred_mjh_03.jpg" alt="">
+		<img class="" src="{{ url }}/images/work/cloudred_mjh_03.jpg" alt="">
 		<figcaption>Card design templates that are responsive from desktop to mobile</figcaption>
 	</figure>
 </div>
@@ -75,7 +75,7 @@ homepage_work_thumb: homepage_work_cloudred@2x.png
 
 <div class="small-12 medium-9 cell">
 	<figure>
-		<img class="" src="/images/work/cloudred_uncerf_01.png" alt="">
+		<img class="" src="{{ url }}/images/work/cloudred_uncerf_01.png" alt="">
 	</figure>
 </div>
 
