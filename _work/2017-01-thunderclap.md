@@ -48,12 +48,13 @@ permalink: /thunderclap/
 			</small>
 			<h3>
 				Transition an MVP into a Business
+				this {{ site.url }} that
 			</h3>
 		</div>
 
 		<div class="small-6 medium-6 cell">
 			
-			<img class="" src="{{ url }}/images/work/thunderclap_landing_01.png" alt="">
+			<img class="" src="{{ site.url }}/images/work/thunderclap_landing_01.png" alt="">
 			
 		</div>
 	</div>
