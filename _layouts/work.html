@@ -1,0 +1,82 @@
+---
+layout: default
+format: work
+---
+<main role="main" id="content" class="row">
+  <div class="{% if page.fullwidth == true %}small-12 columns{% else %}medium-12 medium-centered columns{% endif %}">
+    <article itemscope itemtype="http://schema.org/Article">
+      <meta content="{{ site.data.ui[site.lang].html_language }}" itemprop="inLanguage" />
+      <header>
+
+        {% include helper/_video_embed.html %}
+
+        {% if page.video or page.embed %}
+        {% elsif page.image %}
+        <figure>
+          <img src="{{ "/images/" | absolute_url }}{{ page.image }}" alt="{{ page.title | strip_html }}" itemprop="image">
+
+          {% if page.caption_url and page.caption %}
+          <figcaption>
+            <a href="{{ page.caption_url }}" target="_blank">{{ page.caption }}</a>
+          </figcaption>
+          {% elsif page.caption %}
+          <figcaption>
+            {{ page.caption }}
+          </figcaption>
+          {% endif %}
+        </figure>
+        {% endif %}
+
+
+
+      </header>
+
+
+      <div class="main-content" itemprop="articleSection">
+        <div class="grid-x align-center align-middle">
+          {{ content }}
+
+
+          {% if page.protected == true %}
+            {% include helper/_password_login.html %}
+          {% endif %}
+
+
+          {% if page.link %}
+            <p>
+              <a class="button" href="{{ page.link }}" title="{{ site.data.ui[site.lang].source }} › {{ page.title }}">
+                {{ site.data.ui[site.lang].check_out_link }}
+              </a>
+            </p>
+          {% endif %}
+          
+
+        </div>
+      </div>
+
+
+
+      {% if page.comments == true %}
+      {% include helper/_comments.html %}
+      {% endif %}
+
+
+      {% if page.show_meta == true %}
+      <footer>
+        <p><small>
+          {% if page.author %}{{ site.data.ui[site.lang].written_by }} {{ page.author }} // {% endif %}
+          {% capture time %}{{ page.date }}{% endcapture %}
+          <time datetime="{{ time | truncate: 13 | remove: '...' }}" itemprop="datePublished">{{ time | truncate: 13 | remove: '...' }}</time>
+        </small></p>
+      </footer>
+      {% endif %}
+
+
+      {% if page.full_casestudy == true %}
+      {% else %}
+        {% include helper/_pagination.html %}
+      {% endif %}
+    </article>
+
+  </div>
+</main><!-- /.row -->

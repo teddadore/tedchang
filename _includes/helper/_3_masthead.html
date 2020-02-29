@@ -1,0 +1,127 @@
+{% if page.format == 'frontpage' %}
+	{% for post in site.posts limit:1%}
+	{% if forloop.first %}
+
+	<header id="masthead"{% if post.header_image %} class="header-image"{% endif %}>
+		{% if post.header_image %}
+			<figure>
+				<div style="background-image: url('{{ "/images/" | absolute_url }}{{ post.header_image }}');"></div>
+				{% if post.header_caption_url && post.header_caption %}
+				<figcaption>
+					<a href="{{ post.header_caption_url }}" target="_blank">{{ post.header_caption }}</a>
+				</figcaption>
+				{% elsif post.header_caption %}
+				<figcaption>
+					{{ post.header_caption }}
+				</figcaption>
+				{% endif %}
+			</figure>
+		{% endif %}
+	</header>
+
+	{% endif %}
+	{% endfor %}
+{% elsif page.header_image %}
+
+	<header id="masthead"{% if page.header_image %} class="header-image cakdskj"{% endif %}>
+		{% if page.header_image %}
+			<figure>
+				<div style="background-image: url('{{ "/images/" | absolute_url }}{{ page.header_image }}');"></div>
+				{% if page.header_caption_url && page.header_caption %}
+				<figcaption>
+					<a href="{{ page.header_caption_url }}" target="_blank">{{ page.header_caption }}</a>
+				</figcaption>
+				{% elsif page.header_caption %}
+				<figcaption>
+					{{ page.header_caption }}
+				</figcaption>
+				{% endif %}
+			</figure>
+		{% endif %}
+	</header>
+
+
+{% elsif page.header_image_page %}
+
+	<header id="{{ page.work_name }}"{% if page.header_image_page %} class="header-image"{% endif %}>
+		{% if page.header_image_page %}
+			<div class="grid-x grid-padding-x align-center">
+				
+				<div class="small-12 medium-9 large-8 cell">
+					<div class="grid-x grid-padding-x align-middle">
+						<div class="small-6 cell">
+							<figure>
+								<img src="{{ "/images/work/" | absolute_url }}{{ page.header_image_page }}" />
+							</figure>
+						</div>
+
+						<div class="small-6 hero-details cell">
+							<h1 itemprop="name headline">
+								{{ page.title | remove: '<p>' | remove: '</p>' }}
+							</h1>
+							<p class="" >
+								I'm a designer that builds meaningful products for emergent endeavors. In the past I’ve helped users book hotels at <a href="/google">Google Travel</a>, established a design system to stream your favorite shows at <a href="/nbc">NBCUniversal</a>, and helped a startup move beyond MVP at <a href="/thunderclap">Thunderclap</a>.
+							</p>
+							<p>
+								My work spans mobile, desktop, and connected device platforms.
+							</p>
+							<p>
+								<a href="mailto:{{ site.email }}?subject=Awesome%20website,%20bro">
+									ted@tedchang.com
+								</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		{% endif %}
+	</header>
+
+
+{% elsif page.header_image_work %}
+
+	<header id="{{ page.work_name }}"{% if page.header_image_work %} class="header-image header-work"{% endif %}>
+		{% if page.header_image_work %}
+			<div class="grid-x grid-padding-x align-center align-middle">
+				
+				<div class="medium-5 large-3 cell hero-details hide-for-small-only">
+					<h1 itemprop="name headline">
+						{{ page.title | remove: '<p>' | remove: '</p>' }}
+					</h1>
+					<p class="work-title" style="">
+						{{ page.work_position }}<br>
+						{{ page.work_year }}
+					</p>
+					
+					{% for tag in page.work_skills %}
+						<span class="label grey-color-theme">{{ tag.skill }}</span>
+					{% endfor %}
+				</div>
+
+    			<div class="small-10 medium-6 large-7 cell">
+					<figure>
+						<img src="{{ "/images/work/" | absolute_url }}{{ page.header_image_work }}" />
+					</figure>
+				</div>
+
+			</div>
+		{% endif %}
+	</header>
+
+	<div class="grid-x grid-padding-x" style="margin-top: 1em;">
+		<div class="small-12 cell hero-details hide-for-medium">
+			<h1 itemprop="name headline">
+				{{ page.title | remove: '<p>' | remove: '</p>' }}
+			</h1>
+			<p class="work-title" style="">
+				{{ page.work_position }}<br>
+				{{ page.work_year }}
+			</p>
+
+			{% for tag in page.work_skills %}
+				<span class="label grey-color-theme">{{ tag.skill }}</span>
+			{% endfor %}
+		</div>
+	</div>
+{% endif %}

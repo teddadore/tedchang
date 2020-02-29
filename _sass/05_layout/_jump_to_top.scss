@@ -1,0 +1,32 @@
+/* Jump to top
+------------------------------------------------------------------- */
+#up-to-top {
+	float: right;
+}
+#up-to-top a span{
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	font-size: 3em;
+	display: block;
+	padding: 0 .5em 0 .5em;
+}
+li#up-to-top {
+	font-size: 0.4em;
+	display: block;
+	padding: 0 .2em 0 0;
+	border-radius: $global-radius;
+}
+li#up-to-top:hover {
+	/*background: $ci-1;*/
+	color: #fff;
+}
+#up-to-top a:hover {
+	color: $ci-1;
+}
+#footer ul.inline-list li#up-to-top:before {
+	content: '';
+	padding: 0;
+}

@@ -1,0 +1,477 @@
+---
+# Only the main Sass file needs front matter, rest is included from site.sass.sass_dir
+sitemap:
+  exclude: true
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+// To change settings open the partials in the according folders.
+// You better leave this file as is.
+
+@import "00_functions/00_functions";
+
+//  Set color scheme in _config.yml
+@import "01_colors/_color_scheme_{{ site.color_scheme }}.scss";
+
+@import "02_settings/00_settings";
+
+@import "02_settings/00_normalize";
+
+
+//     ______                                         __
+//    /_  __/_  ______  ____  ____ __________ _____  / /_  __  __
+//     / / / / / / __ \/ __ \/ __ `/ ___/ __ `/ __ \/ __ \/ / / /
+//    / / / /_/ / /_/ / /_/ / /_/ / /  / /_/ / /_/ / / / / /_/ /
+//   /_/  \__, / .___/\____/\__, /_/   \__,_/ .___/_/ /_/\__, /
+//       /____/_/          /____/          /_/          /____/
+
+/* Font Families */
+$font-family-serif:         {{ site.font.font-family-serif }}
+$font-family-sans-serif:    {{ site.font.font-family-sans-serif }}
+$base-font-family:          {{ site.font.base-font-family }}
+$font-family-monospace:     {{ site.font.font-family-monospace }}
+$header-font-family:        {{ site.font.header-font-family }}
+
+/* Line-height */
+$base-line-height: 1.5;
+
+/* Font Weight */
+$base-font-weight: normal;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+@import "04_typography/typography_{{ site.modular_scale }}.scss";
+@import "04_typography/general_typography.scss";
+@import "04_typography/typography_article.scss";
+@import "04_typography/typography_media_queries.scss";
+@import "04_typography/typography_css_elements.scss";
+@import "04_typography/syntax_highlighting.scss";
+@import "04_typography/links";
+
+
+@import "05_layout/00_layout";
+
+/* Theme overrides */
+
+a, a:link {
+    color: #F85E5E;
+    border: none;
+}
+
+a.subhead {
+	color: #545D75;
+}
+
+
+a:hover, a:focus {
+    color: #fb9c9c;
+}
+
+p {
+	font-size: 0.7em;
+	line-height: 1.6;
+	margin-bottom: 1.4em;
+}
+
+h1, h3, #tnav-menu>a, .section-title, .subhead, .index-title {
+	font-family: "bicyclette", sans-serif;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+h3 {
+	font-size: 1.8em;
+	line-height: 1.1;
+}
+
+h2, .work-title, .label { 
+	font-family: odisseia, sans-serif;
+}
+
+h2 {
+	letter-spacing: 0;
+	text-transform: initial;
+	margin-bottom: 1em;
+}
+
+li {
+    font-size: 0.7em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+figcaption {
+	font-size: 0.5em;
+	text-align: left;
+	padding-top: 0.75em;
+	color: #888;
+}
+
+hr {
+	margin: 4rem auto;
+	border-color: rgba(84, 93, 117, 0.4);
+}
+
+figure {
+  margin: 2em 0;
+}
+
+blockquote {
+	text-transform: none;
+	font-size: 0.7em;
+}
+
+.button.large {
+    font-size: 1.1rem;
+}
+
+.label.grey-color-theme {
+	border-radius: 30px;
+	background: rgba(58, 58, 58, 0.7);
+	font-size: 0.65rem;
+    padding: 0.4rem 0.7rem;
+}
+
+.section-title {
+	text-transform: uppercase;
+	color: #fd7e7e;
+	margin-top: 0.2em;
+}
+
+.section-wrapper {
+	background-color: #f9f4e9;
+    padding: 0.7em 1em;
+    margin: 2.1em 0;
+    border-radius: 20px;
+}
+
+.work-title {
+	font-weight: 600;
+	color: #3A3A3A;
+	line-height: 1.25
+}
+
+.subhead {
+	font-size: 1.1em;
+    margin-bottom: 0.4em;
+}
+
+.index-title {
+	font-size: 1em;
+	font-weight: 900;
+	font-style: normal;
+	letter-spacing: 0.4em;
+	margin: 3em auto 4em;
+	color: #ccc6c6;
+	text-transform: uppercase;
+}
+
+#tnav-logo>a {
+    padding: 0;
+}
+
+#tnav a:hover {
+    border: 0;
+    background: none;
+    opacity: 0.6;
+}
+
+#content a img:hover {
+	box-shadow: none;
+}
+
+img.ted-chang-logo {
+	width: 122px;
+}
+
+body.homepage p {
+	font-size: 0.65em;
+}
+
+body.homepage h1 {
+	font-family: "bicyclette", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+	opacity: 0.75;
+}
+
+body.homepage h2 {
+	font-size: 1.1em;
+	font-weight: 400;
+	line-height: 1.3;
+	letter-spacing: -0.2px;
+	text-transform: none;
+	color: #545D75;
+	margin-top: inherit;
+}
+
+body.homepage h3 {
+	font-family: "bicyclette", sans-serif;
+	font-size: 1.3em;
+	font-weight: 900;
+	font-style: normal;
+	letter-spacing: 0.35rem;
+	color: #545D75;
+	text-transform: uppercase;
+}
+
+body.homepage #masthead.header-image, body.homepage #masthead.header-image div {
+	height: auto; 
+}
+
+body { 
+	font-family: usual, sans-serif;
+	color: #3A3A3A;
+}
+
+body.homepage {
+	background-color: #ffd2fd;
+}
+
+body.about-ted {
+	background-color: #fff;
+}
+
+body.homepage header {
+	/*max-width: 100%;*/
+	/*margin: 0 auto;*/
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 56%, cover;
+	/*min-height: 380px;*/
+	background: rgba(252,235,185,1);
+	background: -moz-linear-gradient(top, rgba(252,235,185,1) 0%, rgba(239,168,168,1) 56%, rgba(255,210,253,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,235,185,1)), color-stop(56%, rgba(239,168,168,1)), color-stop(100%, rgba(255,210,253,1)));
+	background: -webkit-linear-gradient(top, rgba(252,235,185,1) 0%, rgba(239,168,168,1) 56%, rgba(255,210,253,1) 100%);
+	background: -o-linear-gradient(top, rgba(252,235,185,1) 0%, rgba(239,168,168,1) 56%, rgba(255,210,253,1) 100%);
+	background: -ms-linear-gradient(top, rgba(252,235,185,1) 0%, rgba(239,168,168,1) 56%, rgba(255,210,253,1) 100%);
+	background: linear-gradient(to bottom, rgba(252,235,185,1) 0%, rgba(239,168,168,1) 56%, rgba(255,210,253,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcebb9', endColorstr='#FFD2FD', GradientType=0 );
+}
+
+header.header-work {
+	padding: 2em 0 1em;
+}
+
+header#google {
+    background: #E7EFFD;
+    background: -moz-linear-gradient(top, #E7EFFD 0%, #8DADE1 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #E7EFFD), color-stop(100%, #8DADE1));
+    background: -webkit-linear-gradient(top, #E7EFFD 0%, #8DADE1 100%);
+    background: -o-linear-gradient(top, #E7EFFD 0%, #8DADE1 100%);
+    background: -ms-linear-gradient(top, #E7EFFD 0%, #8DADE1 100%);
+    background: linear-gradient(to bottom, #E7EFFD 0%, #8DADE1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E7EFFD', endColorstr='#8DADE1', GradientType=0 );
+}
+
+header#nbc {
+    background: #f0e8f8;
+    background: -moz-linear-gradient(top, #caf5fe 0%, #5b16b8 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #5b16b8), color-stop(100%, #a96ce3));
+    background: -webkit-linear-gradient(top, #caf5fe 0%, #5b16b8 100%);
+    background: -o-linear-gradient(top, #caf5fe 0%, #5b16b8 100%);
+    background: -ms-linear-gradient(top, #caf5fe 0%, #5b16b8 100%);
+    background: linear-gradient(to bottom, #caf5fe 0%, #5b16b8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#CAF5FE', endColorstr='#5B16B8', GradientType=0 );
+}
+
+header#thunderclap {
+    background: #fef0ef;
+    background: -moz-linear-gradient(top, #fef0ef 0%, #fecfce 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #fef0ef), color-stop(100%, #fecfce));
+    background: -webkit-linear-gradient(top, #fef0ef 0%, #fecfce 100%);
+    background: -o-linear-gradient(top, #fef0ef 0%, #fecfce 100%);
+    background: -ms-linear-gradient(top, #fef0ef 0%, #fecfce 100%);
+    background: linear-gradient(to bottom, #fef0ef 0%, #fecfce 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fef0ef', endColorstr='#fecfce', GradientType=0 );
+}
+
+header#cloudred {
+    background: #f9f5f7;
+    background: -moz-linear-gradient(top, #f9f5f7 0%, #CF2739 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #f9f5f7), color-stop(100%, #CF2739));
+    background: -webkit-linear-gradient(top, #f9f5f7 0%, #CF2739 100%);
+    background: -o-linear-gradient(top, #f9f5f7 0%, #CF2739 100%);
+    background: -ms-linear-gradient(top, #f9f5f7 0%, #CF2739 100%);
+    background: linear-gradient(to bottom, #f9f5f7 0%, #CF2739 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f5f7', endColorstr='#CF2739', GradientType=0 );
+}
+
+header#dede {
+	background: rgba(252,249,190,1);
+	background: -moz-linear-gradient(top, rgba(252,249,190,1) 0%, rgba(246,169,105,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,249,190,1)), color-stop(100%, rgba(246,169,105,1)));
+	background: -webkit-linear-gradient(top, rgba(252,249,190,1) 0%, rgba(246,169,105,1) 100%);
+	background: -o-linear-gradient(top, rgba(252,249,190,1) 0%, rgba(246,169,105,1) 100%);
+	background: -ms-linear-gradient(top, rgba(252,249,190,1) 0%, rgba(246,169,105,1) 100%);
+	background: linear-gradient(to bottom, rgba(252,249,190,1) 0%, rgba(246,169,105,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf9be', endColorstr='#f6a969', GradientType=0 );
+}
+
+header#westelm {
+	background: rgba(247,243,225,1);
+	background: -moz-linear-gradient(top, rgba(247,243,225,1) 0%, rgba(241,220,136,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,243,225,1)), color-stop(100%, rgba(241,220,136,1)));
+	background: -webkit-linear-gradient(top, rgba(247,243,225,1) 0%, rgba(241,220,136,1) 100%);
+	background: -o-linear-gradient(top, rgba(247,243,225,1) 0%, rgba(241,220,136,1) 100%);
+	background: -ms-linear-gradient(top, rgba(247,243,225,1) 0%, rgba(241,220,136,1) 100%);
+	background: linear-gradient(to bottom, rgba(247,243,225,1) 0%, rgba(241,220,136,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f3e1', endColorstr='#f1dc88', GradientType=0 );
+}
+header#about-ted {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(174,241,234,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(174,241,234,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(174,241,234,1) 0%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(174,241,234,1) 0%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(174,241,234,1) 0%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to bottom, rgba(174,241,234,1) 0%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aef1ea', endColorstr='#fff', GradientType=0 );
+	padding-top: 2.6em;
+}
+
+
+body.homepage #content {
+	margin-top: 2em;
+}
+
+#footer a:hover {
+
+}
+
+#tnav {
+	background: transparent;
+	border: 0;
+}
+
+#tnav-menu>a {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: 0.2em 0;
+}
+
+#content {
+	margin-top: 1em;
+}
+
+
+/* Media Queries Layout
+------------------------------------------------------------------- */
+
+
+/* Small
+------------------------------------------------------------------- */
+@media (max-width: $small - 1) {
+
+	img.ted-chang-logo {
+		width: 100px;
+		padding-top: 10px;
+	}
+
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	h2 {
+		font-size: 1.25rem;
+	}
+
+	h3 {
+    	font-size: 1.4em;
+    }
+
+	.work-title {
+		font-size: 0.7em;
+	}
+
+	body.homepage header {
+		padding: 4em 0 1em;
+	}
+
+	body.homepage h1 {
+		font-size: 3em;
+		line-height: 0.55em;
+    	letter-spacing: 0.04rem;
+    	margin: 0;
+	}
+
+	.hero-details {
+		order: 1;
+	}
+
+}
+
+
+
+/* Medium
+------------------------------------------------------------------- */
+@media (min-width: $small + 1) and (max-width: $medium) {
+
+	h1 {
+		font-size: 1.4rem;
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	h3 {
+    	font-size: 1.6em;
+    }
+
+	.work-title {
+		font-size: 0.6em;
+	}
+
+	body.homepage header {
+		padding: 5em 0 1em;
+	}
+
+    body.homepage h1 {
+		font-size: 5em;
+		line-height: 0.55em;
+    	letter-spacing: 0.04rem;
+    	margin: 0;
+	}
+}
+
+
+
+/* Large
+------------------------------------------------------------------- */
+
+@media (min-width: $medium + 1) {
+
+	h1 {
+		font-size: 1.8rem;
+	}
+
+	h2 {
+		font-size: 1.75rem;
+	}
+
+	.work-title {
+		font-size: 0.7em;
+	}
+
+	body.homepage header {
+		padding: 7rem 0 4rem;
+	}
+
+	body.homepage h1 {
+		font-size: 6.5em;
+		line-height: 0.5em;
+    	letter-spacing: 0.04rem;
+    	margin: 0;
+	}
+
+	#masthead.header-image.header-work div {
+
+	}
+}
+

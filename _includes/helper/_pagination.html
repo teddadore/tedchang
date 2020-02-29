@@ -1,0 +1,16 @@
+<div id="pagination">
+  {% if page.previous.url %}
+  	{% unless page.previous.protected == false %}
+	    <a class="subhead prev" href="{{ page.previous.url  | absolute_url }}" title="{{page.previous.title}}">
+        <span>&#8592; {{ page.previous.title }}</span>
+      </a>
+	{% endunless %}
+  {% endif %}
+  {% if page.next.url %}
+  	{% unless page.next.protected == false %}
+	    <a class="subhead next" href="{{ page.next.url  | absolute_url }}" title="{{page.next.title}}">
+        <span>{{ page.next.title }} &#8594;</span>
+      </a>
+	{% endunless %}
+  {% endif %}
+</div><!-- /#pagination -->

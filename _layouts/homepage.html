@@ -1,0 +1,72 @@
+---
+layout: default
+format: homepage
+---
+<header id="" class="container">
+    <div class="medium-10 medium-centered columns">
+        <h1 style="color: #5DD1E8;">
+            FULL-
+        </h1>
+        <h1 style="color: #2EB9F8;">
+            STACK
+        </h1>
+        <h1 style="color: #F85E5E;">
+            DESIGNER
+        </h1>
+    </div>
+</header>
+
+<div class="row" style="max-width: 100%">
+    <div class="medium-10 medium-centered columns">
+        <div class="container">
+            <div class="small-12 columns end">
+                <h2>I’m a designer that builds meaningful digital products and experiences.</h2>
+
+                <h2>I specialize in <strong>visual design</strong>, <strong>product vision</strong>, <strong>design systems</strong>, and <strong>user interface</strong> within  <strong>user-centered</strong> solutions.</h2>
+
+                <h2> I can <strong>code</strong> what I design. </h2>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+<main role="main" id="content" class="row">
+
+    <div class="medium-10 medium-centered columns">
+        <h3 class="text-center" style="margin-bottom: 2em;">
+            {{ site.data.ui[site.lang].featured_work }}
+        </h3>  
+
+
+        {% for work in site.work reversed %}
+            {% unless work.protected == false %}
+            <div class="grid-x grid-padding-x align-center align-middle">
+                <div class="small-4 medium-4 large-4 medium-offset-1 large-offset-2 cell clearfix">
+                    <a href="{{ work.url | absolute_url }}">
+                        <!-- <img src="https://via.placeholder.com/300x200" class="right"> -->
+                        <img src="{{ "/images/work/" | absolute_url }}{{ work.homepage_work_thumb }}" class="right">
+                    </a>
+                </div>
+                <div class="small-8 medium-7 large-6 cell">
+                    <a class="subhead" href="{{ work.url | absolute_url }}">
+                        {{ work.title }}
+                    </a>
+                    <p>
+                        {{ work.subheadline }}
+                    </p>
+                </div>
+                </a>
+            </div>
+
+            <div class="grid-x grid-padding-x align-center align-middle">
+                <div class="small-11">
+                    <hr>
+                </div>
+            </div>
+            {% endunless %} 
+        {% endfor %}
+    </div>
+</main>
+

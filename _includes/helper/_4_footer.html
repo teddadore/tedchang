@@ -1,0 +1,19 @@
+<footer id="footer" class="row">
+  <nav id="navigation-footer" class="small-12 columns">
+    <ul class="inline-list text-center">
+      {% include helper/_social_media_icons.html %}
+      {% for nav in site.data.navigation_footer %}
+        {% if nav.url contains 'http' %}
+          {% assign domain = '' %}
+        {% elsif nav.url == '#' %}
+          {% assign domain = '' %}
+        {% else %}
+          {% assign domain = site.baseurl | prepend: site.url %}
+        {% endif %}
+     
+      {% endfor %}
+      <li id="up-to-top"><a href="#top-of-page"><span>&#9759;</span> <strong>Hey, up high.</strong></a></li>
+    </ul>
+    <p class="text-center">© {{ site.time | date: '%Y' }} Ted Chang</p>
+  </nav>
+</footer>
