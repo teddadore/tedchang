@@ -33,7 +33,7 @@ email         : 'ted@tedchang.com'
 
 
 # Build settings
-url           : ''
+url           : 'tedchang'
 baseurl       : 'tedchang'
 markdown      : kramdown
 highlighter   : rouge
