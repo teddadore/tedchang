@@ -1,4 +1,4 @@
----
+<!-- 
 title: NBCUniversal
 subheadline: Designed solutions for the streaming landscape
 work_position: Senior UX Designer
@@ -15,7 +15,7 @@ header_image_work: 'nbc_hero@2x.png'
 homepage_work_thumb: homepage_work_nbc@2x.png
 permalink: /nbc/
 protected: true
----
+ -->
 
 {% include shared_work/_nbc.html %}
 
